@@ -1,5 +1,5 @@
 function mash(){
-    return "You will live in a " +getHome() + ", and you will have "  +getChildrenCount() + " kids, and you will drive a " +getCar() + " and you will marry "   +spouseName() + " and you will work as a " +yourJob() + " with a salary of $" +yourSalary() 
+    return "You will live in a " +getHome() + ", and you will have "  +getChildrenCount() + " kids, and you will drive a " +getCar() + " and you will marry "   +spouseName() + " and you will work as a " +yourJob() + " with a salary of $" +yourSalary() + " and finally you will live until you are " +dyingAge() 
 }
 console.log(mash());
 function getHome(){
@@ -23,4 +23,7 @@ function yourJob(){
     }
 function yourSalary(){
     return Math.floor(Math.random()*1000000000+1)
+}
+function dyingAge(){
+    return Math.floor(Math.random()*100+1)
 }
