@@ -19,7 +19,7 @@ function spouseName(){
 }
 function yourJob(){
     let job =["Engineer","Game Dev", "Taxi Driver", "Baker"]
-    return job[Math.floor(Math.random()*3+1)]
+    return job[Math.floor(Math.random()*3+1)||process.argv[4]]
     }
 function yourSalary(){
     return Math.floor(Math.random()*1000000000+1)
