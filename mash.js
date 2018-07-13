@@ -1,5 +1,5 @@
 function mash(){
-    return "You will live in a " +getHome() + ", and you will have "  +getChildrenCount() + " kids, and you will drive a " +getCar() + " and you will marry "   +spouseName() + " and you will work as a " +yourJob()
+    return "You will live in a " +getHome() + ", and you will have "  +getChildrenCount() + " kids, and you will drive a " +getCar() + " and you will marry "   +spouseName() + " and you will work as a " +yourJob() + " with a salary of $" +yourSalary() 
 }
 console.log(mash());
 function getHome(){
@@ -21,4 +21,6 @@ function yourJob(){
     let job =["Engineer","Game Dev", "Taxi Driver", "Baker"]
     return job[Math.floor(Math.random()*3+1)]
     }
-    
+function yourSalary(){
+    return Math.floor(Math.random()*1000000000+1)
+}
